@@ -34,12 +34,12 @@ Product.defaultProps = {
 let weightProp = function(props, propName, componentName) {
   if (props[propName] == undefined){
     return new Error ('Weight is required')
-    if (typeof(props[propName]) != 'number'){
-      return new Error ('Weight must be a number')
-      if (props[propName] < 80 || props[propName] > 300){
-        return new Error ('Weiht must be beteween 80 and 300');
-      }
-    }
+  }
+  if (typeof(props[propName]) != 'number'){
+    return new Error ('Weight must be a number')
+  }
+  if (props[propName] < 80 || props[propName] > 300){
+    return new Error ('Weiht must be beteween 80 and 300');
   }
 }
 
