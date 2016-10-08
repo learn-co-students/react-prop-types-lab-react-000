@@ -1,3 +1,4 @@
+const React = require('react')
 const Product = require('./components/Product');
 const ReactDOM = require('react-dom')
 
